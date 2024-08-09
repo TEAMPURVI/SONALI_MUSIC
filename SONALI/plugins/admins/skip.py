@@ -7,7 +7,7 @@ from SONALI.core.call import RAUSHAN
 from SONALI.misc import db
 from SONALI.utils.database import get_loop
 from SONALI.utils.decorators import AdminRightsCheck
-from SONALI.utils.inline import close_markup, stream_markup, telegram_markup
+from SONALI.utils.inline import close_markup, stream_markup
 from SONALI.utils.stream.autoclear import auto_clean
 from SONALI.utils.thumbnails import get_thumb
 from config import BANNED_USERS
