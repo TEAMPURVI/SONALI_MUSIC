@@ -5,7 +5,7 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
+from config import BANNED_USERS
 from SONALI import Carbon, YouTube, app
 from SONALI.utils.database import (
     delete_playlist,
