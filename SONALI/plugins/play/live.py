@@ -1,6 +1,6 @@
 from pyrogram import filters
 
-from SONALImport YouTube, app
+from SONALImport YouTube, app, YTB
 from SONALItils.channelplay import get_channeplayCB
 from SONALItils.decorators.language import languageCB
 from SONALItils.stream.stream import stream
