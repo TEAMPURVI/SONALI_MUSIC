@@ -1,8 +1,8 @@
 import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
-from PURVIMUSIC import app
+from SONALI import app
 from pyrogram import filters
-from PURVIMUSIC.utils.purvi_ban import admin_filter
+from SONALI.utils.RAUSHAN_ban import admin_filter
 
 
 
