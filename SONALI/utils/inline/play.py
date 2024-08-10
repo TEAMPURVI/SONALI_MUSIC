@@ -99,7 +99,7 @@ def stream_markup(_, videoid, chat_id):
          ],
         [
             InlineKeyboardButton(
-                text="𝖮𝗐𝗇𝖾𝗋🥀", url="https://t.me/@ll_ALPHA_BABY_lll",
+                text="𝖮𝗐𝗇𝖾𝗋🥀", url="https://t.me/WORLD_ALPHA",
             ),
             InlineKeyboardButton(
                 text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍🥀", url="https://t.me/+Q25anL0Ckuk5NzM1",
