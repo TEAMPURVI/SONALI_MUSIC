@@ -1,4 +1,4 @@
-from PURVIMUSIC import app 
+from SONALI import app 
 import asyncio
 import random
 from pyrogram import Client, filters
@@ -219,4 +219,4 @@ async def cancel_spam(client, message):
             spam_chats.remove(message.chat.id)
         except:
             pass
-        return await message.reply("♦STOP♦")
+        return await message.reply("♦𝐒ᴏɴᴀʟɪ sᴛᴏᴘᴘᴇᴅ ᴛᴀɢɪɴɢ...♦")
