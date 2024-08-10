@@ -19,6 +19,7 @@ pymongo==4.6.3
 python-dotenv
 pyyaml==6.0.1
 requests
+qrcode
 SafoneAPI==1.0.65
 tgcrypto
 gpytranslate
