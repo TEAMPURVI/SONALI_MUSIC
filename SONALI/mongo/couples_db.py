@@ -1,4 +1,4 @@
-from PURVIMUSIC.utils.mongo import db
+from SONALI.utils.mongo import db
 
 coupledb = db.couple
 
