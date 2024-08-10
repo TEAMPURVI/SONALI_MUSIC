@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.database import is_on_off
+from SONALI import app
+from SONALI.utils.database import is_on_off
 from config import LOGGER_ID
 
 
