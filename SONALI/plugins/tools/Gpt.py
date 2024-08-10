@@ -1,7 +1,7 @@
 import random
 import time
 import requests
-from PURVIMUSIC import app
+from SONALI import app
 from config import BOT_USERNAME
 
 from pyrogram.enums import ChatAction, ParseMode
@@ -28,7 +28,7 @@ async def chat_gpt(bot, message):
                     end_time = time.time()
                     telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
                     await message.reply_text(
-                        f" {x}      ᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛  @About_Alpha_Baby",
+                        f" {x}      ᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛  @WORLD_ALPHA",
                         parse_mode=ParseMode.MARKDOWN
                     )
                 else:
