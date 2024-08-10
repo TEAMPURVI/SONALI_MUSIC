@@ -3,9 +3,9 @@ from config import BOT_USERNAME
 from pyrogram.enums import MessageEntityType
 from pyrogram import filters
 from pyrogram.types import Message
-from PURVIMUSIC import app
-from PURVIMUSIC.mongo.readable_time import get_readable_time
-from PURVIMUSIC.mongo.afkdb import add_afk, is_afk, remove_afk
+from SONALI import app
+from SONALI.mongo.readable_time import get_readable_time
+from SONALI.mongo.afkdb import add_afk, is_afk, remove_afk
 
 
 
