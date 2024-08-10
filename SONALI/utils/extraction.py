@@ -1,7 +1,7 @@
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message, User
 
-from SONALI import app
+from PURVIMUSIC import app
 
 
 async def extract_user(m: Message) -> User:
@@ -11,5 +11,7 @@ async def extract_user(m: Message) -> User:
     return await app.get_users(
         msg_entities.user.id
         if msg_entities.type == MessageEntityType.TEXT_MENTION
-        else int(m.command[1]) if m.command[1].isdecimal() else m.command[1]
+        else int(m.command[1])
+        if m.command[1].isdecimal()
+        else m.command[1]
     )
