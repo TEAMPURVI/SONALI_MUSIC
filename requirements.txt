@@ -21,6 +21,7 @@ pyyaml==6.0.1
 requests
 SafoneAPI==1.0.65
 tgcrypto
+gpytranslate
 spotipy
 telegraph
 speedtest-cli
