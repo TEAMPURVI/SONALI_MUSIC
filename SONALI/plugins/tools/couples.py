@@ -8,8 +8,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import *
 
 #BOT FILE NAME
-from PURVIMUSIC import app as app
-from PURVIMUSIC.mongo.couples_db import _get_image, get_couple
+from SONALI import app as app
+from SONALI.mongo.couples_db import _get_image, get_couple
 
 POLICE = [
     [
