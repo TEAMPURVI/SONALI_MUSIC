@@ -14,8 +14,7 @@ from SONALI.utils.exceptions import AssistantErr
 from SONALI.utils.inline import (
     aq_markup,
     close_markup,
-    stream_markup,
-    telegram_markup,
+    stream_markup
 )
 from SONALI.utils.pastebin import RAUSHANBin
 from SONALI.utils.stream.queue import put_queue, put_queue_index
