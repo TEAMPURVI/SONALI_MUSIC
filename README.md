@@ -1,4 +1,4 @@
-# 𝗦𝗢𝗡𝗔𝗟𝗜-𝗠𝗨𝗦𝗜𝗖
+# 𝗦𝗢𝗡𝗔𝗟𝗜-𝗠𝗨𝗦𝗜𝗖 𝗡𝗘𝗪 𝗛𝗘𝗥𝗢𝗞𝗨 𝗘𝗥𝗥𝗢𝗥 𝗙𝗜𝗫𝗘𝗗 𝗥𝗘𝗣𝗢
 <h1 align="center"
  
 ### 🚩🚩 जय बजरंग बली 🚩🚩
@@ -32,7 +32,7 @@ GO TO [RELOAD.PY](https://github.com/TEAMPURVI/SONALI_MUSIC/blob/main/SONALI/plu
 
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TEAMPURVI/SONALI_MUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/TEAMPURVI/SONALI_MUSIC&branch=main&name=purvibot)
+
 
 <p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=TEAMPURVI&show_icons=true&locale=en&layout=compact" alt="ʀᴀᴊᴀ ʙᴀʙᴜ" /></p>
 
