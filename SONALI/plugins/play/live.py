@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from SONALImport YouTube, app, YTB
-from SONALItils.channelplay import get_channeplayCB
-from SONALItils.decorators.language import languageCB
-from SONALItils.stream.stream import stream
+from SONALI import YouTube, app
+from SONALI.utils.channelplay import get_channeplayCB
+from SONALI.utils.decorators.language import languageCB
+from SONALI.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
