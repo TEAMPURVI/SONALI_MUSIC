@@ -2,9 +2,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
 import requests
-from PURVIMUSIC import app 
+from SONALI import app 
 
-SUPPORT_CHAT = "PURVI_UPDATES"
+SUPPORT_CHAT = "PURVI_SUPPORT"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
