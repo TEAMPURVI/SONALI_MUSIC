@@ -1,6 +1,6 @@
 import requests
 from requests import get 
-from PURVIMUSIC import app
+from SONALI import app
 from pyrogram import filters
 from pyrogram.types import InputMediaPhoto
 
