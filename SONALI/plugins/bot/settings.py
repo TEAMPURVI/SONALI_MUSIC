@@ -48,24 +48,15 @@ async def settings_mar(client, message: Message, _):
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
-
-@app.on_callback_query(filters.regex("settings_helper") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("gib_source") & ~BANNED_USERS)
 @languageCB
-async def settings_cb(client, CallbackQuery, _):
-    try:
-        await CallbackQuery.answer(_["set_cb_5"])
-    except:
-        pass
-    buttons = setting_markup(_)
-    return await CallbackQuery.edit_message_text(
-        _["setting_1"].format(
-            app.mention,
-            CallbackQuery.message.chat.id,
-            CallbackQuery.message.chat.title,
+async def gib_repo(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_media(
+        InputMediaVideo("https://telegra.ph/file/bda2c51bd00c8f4710b04.mp4"),
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper")]]
         ),
-        reply_markup=InlineKeyboardMarkup(buttons),
     )
-
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
 @languageCB
