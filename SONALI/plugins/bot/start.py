@@ -1,7 +1,6 @@
 import time
 from pyrogram import filters
 from pyrogram.errors import ChannelInvalid
-from SONALI.plugins.play.playlist import del_plist_msg
 from pyrogram.enums import ChatType, ChatMembersFilter
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
