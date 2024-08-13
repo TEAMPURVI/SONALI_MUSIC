@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from SONALI import YouTube, app, YTB
+from SONALI import YouTube, app
 from SONALI.core.call import RAUSHAN
 from SONALI.misc import SUDOERS, db
 from SONALI.utils.database import (
