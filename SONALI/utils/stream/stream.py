@@ -6,7 +6,7 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from SONALI import Carbon, YouTube, YTB, app
+from SONALI import Carbon, YouTube, app
 from SONALI.core.call import RAUSHAN
 from SONALI.misc import db
 from SONALI.utils.database import add_active_video_chat, is_active_chat
