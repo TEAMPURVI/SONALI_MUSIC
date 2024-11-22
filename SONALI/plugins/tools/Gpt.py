@@ -1,40 +1,30 @@
-import random
-import time
-import requests
-from SONALI import app
-from config import BOT_USERNAME
-
-from pyrogram.enums import ChatAction, ParseMode
+from config import BANNED_USERS
 from pyrogram import filters
+from pyrogram.enums import ChatAction
+from TheApi import api
+from SONALI import app
 
-@app.on_message(filters.command(["chatgpt","ai","ask","gpt","solve"],  prefixes=["+", ".", "/", "-", "", "$","#","&"]))
-async def chat_gpt(bot, message):
-    try:
-        start_time = time.time()
-        await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
 
-        if len(message.command) < 2:
-            await message.reply_text(
-                "Example:\n\n/chatgpt Where is TajMahal?"
-            )
-        else:
-            a = message.text.split(' ', 1)[1]
-            response = requests.get(f'https://chatgpt.apinepdev.workers.dev/?question={a}')
+@app.on_message(filters.command(["chatgpt", "ai", "ask"]) & ~BANNED_USERS)
+async def chatgpt_chat(bot, message):
+    if len(message.command) < 2 and not message.reply_to_message:
+        await message.reply_text(
+            "Example:\n\n`/ai write simple website code using html css, js?`"
+        )
+        return
 
-            try:
-                # Check if "results" key is present in the JSON response
-                if "answer" in response.json():
-                    x = response.json()["answer"]
-                    end_time = time.time()
-                    telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
-                    await message.reply_text(
-                        f" {x}      ᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛  @WORLD_ALPHA",
-                        parse_mode=ParseMode.MARKDOWN
-                    )
-                else:
-                    await message.reply_text("No 'results' key found in the response.")
-            except KeyError:
-                # Handle any other KeyError that might occur
-                await message.reply_text("Error accessing the response.")
-    except Exception as e:
-        await message.reply_text(f"**á´‡Ê€Ê€á´Ê€: {e} ")
+    if message.reply_to_message and message.reply_to_message.text:
+        user_input = message.reply_to_message.text
+    else:
+        user_input = " ".join(message.command[1:])
+
+    await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
+    results = await api.chatgpt(user_input)
+    await message.reply_text(results)
+
+
+__MODULE__ = "CʜᴀᴛGᴘᴛ"
+__HELP__ = """
+/advice - ɢᴇᴛ ʀᴀɴᴅᴏᴍ ᴀᴅᴠɪᴄᴇ ʙʏ ʙᴏᴛ
+/ai [ǫᴜᴇʀʏ] - ᴀsᴋ ʏᴏᴜʀ ǫᴜᴇsᴛɪᴏɴ ᴡɪᴛʜ ᴄʜᴀᴛɢᴘᴛ's ᴀɪ
+/gemini [ǫᴜᴇʀʏ] - ᴀsᴋ ʏᴏᴜʀ ǫᴜᴇsᴛɪᴏɴ ᴡɪᴛʜ ɢᴏᴏɢʟᴇ's ɢᴇᴍɪɴɪ ᴀɪ"""
