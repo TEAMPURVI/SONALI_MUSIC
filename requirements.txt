@@ -25,6 +25,10 @@ qrcode
 SafoneAPI==1.0.65
 tgcrypto
 gpytranslate
+MukeshAPI
+search_engine_parser
+googlesearch-python
+youtube-search-python
 spotipy
 telegraph
 speedtest-cli
@@ -33,5 +37,10 @@ urllib3
 wget
 git+https://github.com/KurimuzonAkuma/pyrogram@dev
 yt-dlp
+bing_image_downloader
 git+https://github.com/alexmercerind/youtube-search-python@main
 git+https://github.com/joetats/youtube_search@master
+git+https://github.com/Vivekkumar-IN/TheApi@main
+bing-image-urls
+git+https://github.com/TEAMPURVI/PurviAPI
+youtubesearchpython
