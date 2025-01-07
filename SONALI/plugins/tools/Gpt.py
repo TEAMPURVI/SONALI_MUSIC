@@ -1,7 +1,7 @@
 from config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.enums import ChatAction
-from TheApi import api
+from PurviAPI import api
 from SONALI import app
 
 
