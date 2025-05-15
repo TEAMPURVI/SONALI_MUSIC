@@ -7,12 +7,12 @@ from youtubesearchpython.__future__ import VideosSearch
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 import config
-from SONALI import app
-from SONALI.misc import _boot_
-from SONALI.plugins.sudo.sudoers import sudoers_list
-from SONALI.utils.database import get_served_chats, get_served_users, get_sudoers
-from SONALI.utils import bot_sys_stats
-from SONALI.utils.database import (
+from BILI import app
+from BILI.misc import _boot_
+from BILI.plugins.sudo.sudoers import sudoers_list
+from BILI.utils.database import get_served_chats, get_served_users, get_sudoers
+from BILI.utils import bot_sys_stats
+from BILI.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
