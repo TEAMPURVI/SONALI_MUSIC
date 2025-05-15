@@ -1,3 +1,42 @@
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
+from SONALI_MUSIC import app
+
+#--------------------------
+
+MUST_JOIN = "GHOULS_SUPPORT"
+#------------------------
+@app.on_message(filters.incoming & filters.private, group=-1)
+async def must_join_channel(app: Client, msg: Message):
+    if not MUST_JOIN:
+        return
+    try:
+        try:
+            await app.get_chat_member(MUST_JOIN, msg.from_user.id)
+        except UserNotParticipant:
+            if MUST_JOIN.isalpha():
+                link = "https://t.me/" + MUST_JOIN
+            else:
+                chat_info = await app.get_chat(MUST_JOIN)
+                link = chat_info.invite_link
+            try:
+                await msg.reply_photo(
+                    photo="https://files.catbox.moe/heg96u.jpg", caption=f"๏ ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴛʜᴇ [๏ sᴜᴘᴘᴏʀᴛ ๏]({link}) ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴄʜᴇᴀᴋ ᴍʏ ғᴇᴀᴛᴜʀᴇs.\n\nᴀғᴛᴇʀ ᴊᴏɪɴ ᴛʜᴇ [๏ ᴄʜᴀɴɴᴇʟ ๏]({link}) ᴄᴏᴍᴇ ʙᴀᴄᴋ ᴛᴏ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ᴛʏᴘᴇ /start ᴀɢᴀɪɴ !! ",
+                    reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton("• ᴊᴏɪɴ •", url=link),
+                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/I_KAISEN"),
+                            ]
+                        ]
+                    )
+                )
+                await msg.stop_propagation()
+            except ChatWriteForbidden:
+                pass
+    except ChatAdminRequired:
+        print(f"๏ ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴍᴜsᴛ_ᴊᴏɪɴ ᴄʜᴀᴛ ๏: {MUST_JOIN} !")
 import time
 import random
 from pyrogram import filters
@@ -58,7 +97,7 @@ async def start_pm(client, message: Message, _):
             await sudoers_list(client=client, message=message, _=_)
             if await is_on_off(2):
                 return await app.send_message(
-                    chat_id=config.LOGGER_ID,
+                    chat_id=config.-1002669019123,
                     text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>sᴜᴅᴏʟɪsᴛ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
                 )
             return
@@ -96,7 +135,7 @@ async def start_pm(client, message: Message, _):
             )
             if await is_on_off(2):
                 return await app.send_message(
-                    chat_id=config.LOGGER_ID,
+                    chat_id=config.-1002669019123,
                     text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ ᴛᴏ ᴄʜᴇᴄᴋ <b>ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</b>.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
                 )
     else:
@@ -108,7 +147,7 @@ async def start_pm(client, message: Message, _):
         )
         if await is_on_off(2):
             return await app.send_message(
-                chat_id=config.LOGGER_ID,
+                chat_id=config.-1002669019123,
                 text=f"{message.from_user.mention} ᴊᴜsᴛ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙᴏᴛ.\n\n<b>ᴜsᴇʀ ɪᴅ :</b> <code>{message.from_user.id}</code>\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{message.from_user.username}",
             )
 
