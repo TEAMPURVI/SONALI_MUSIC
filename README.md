@@ -8,8 +8,6 @@
 <p align="center"><a href="https://ll_ALPHA_BABY_lll"><img src="https://files.catbox.moe/51hg4v.jpg" width="400"></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-</p>
-ʀᴀᴜsʜᴀɴ
 <p align="center">
 <b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
 </p>
