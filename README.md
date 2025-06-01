@@ -1,10 +1,11 @@
 <h2 align="center">
     ──「 sᴏɴᴀʟɪ ᴍᴜsɪᴄ ʙᴏᴛ 」──
 <a href="https://www.youtube.com/watch?v=dQw4w9WgcQ"><img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"></a>
+
  
- **➥ ғɪʀsᴛ ғᴏʀᴋ ᴛʜɪs ʀᴇᴘᴏ ᴀɴᴅ ɢɪᴠᴇ ᴀ sᴛᴀʀ ⭐**
-**➥ ᴛʜᴇɴ ʜᴏsᴛ ᴏɴ ʜᴇʀᴏᴋᴜ / ᴠᴘs / ᴋᴏʏᴀʙ / ᴇᴛᴄ..👨🏻‍💻**
-<h1 align="center"
+➥ ғɪʀsᴛ ғᴏʀᴋ ᴛʜɪs ʀᴇᴘᴏ ᴀɴᴅ ɢɪᴠᴇ ᴀ sᴛᴀʀ ⭐
+➥ ᴛʜᴇɴ ʜᴏsᴛ ᴏɴ ʜᴇʀᴏᴋᴜ / ᴠᴘs / ᴋᴏʏᴀʙ / ᴇᴛᴄ..👨🏻‍💻**
+
  
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <p align="center"><a href="https://ll_ALPHA_BABY_lll"><img src="https://files.catbox.moe/51hg4v.jpg" width="400"></a></p>
