@@ -16,38 +16,81 @@
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/TEAMPURVI/SONALI_MUSIC"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-green?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-<h3 align="center">
-    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ / ᴠᴘs 」─
-</h3>
+<h1 align="center">─「 ǫᴜɪᴄᴋ sᴇᴛᴜᴘ 」─</h1>
 
-- Get your [Necessary Variables](https://github.com/TEAMPURVI/SONALI_MUSIC/blob/master/sample.env)
-- Upgrade and Update by :
-`sudo apt-get update && sudo apt-get upgrade -y`
-- Install Ffmpeg & Python by :
-`sudo apt-get install python3-pip ffmpeg -y`
-- Install pip by :
-`sudo pip3 install -U pip`
-- Install Node js by :
-`curl -fssL https://deb.nodesource.com/setup_19.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
-- Clone the repository by :
-`git clone https://github.com/TEAMPURVI/SONALI_MUSIC && cd SONALI_MUSIC`
-- Install requirements by :
-`pip3 install -U -r requirements.txt`
-- Fill your variables in the env by :
-`vi sample.env`<br>
-Press `I` on the keyboard for editing env<br>
-Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
-- Rename the env file by :
-`mv sample.env .env`
-- Install tmux to keep running your bot when you close the terminal by :
-`sudo apt install tmux && tmux`
-- Finally run the bot by :
-`bash start`
-- For getting out from tmux session : Press `Ctrl+b` and then `d`<br>
-━━━━━━━━━━━━━━━━━━━━
+ 1. **🔧 ᴜᴘᴅᴀᴛᴇ & ᴜᴘɢʀᴀᴅᴇ**
+   ```bash
+   sudo apt-get update && sudo apt-get upgrade -y
+   ```
 
+ 2. **📦 ɪɴsᴛᴀʟʟ ʀᴇǫᴜɪʀᴇᴅ ᴘᴀᴄᴋᴀɢᴇs**
+   ```bash
+   sudo apt-get install python3-pip ffmpeg -y
+   ```
+ 4. **📌 sᴇᴛᴛɪɴɢ ᴜᴘ ᴘɪᴘ**
+   ```bash
+   sudo pip3 install -U pip
+   ```
+ 5. **⚡ ɪɴsᴛᴀʟʟɪɴɢ ɴᴏᴅᴇ**
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.bashrc && nvm install v18
+   ```
+ 6. **📥 ᴄʟᴏɴᴇ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ**
+   ```bash
+   git clone https://github.com/Im-Notcoder/SonaliV2 && cd SonaliV2
+   ```
+ 7. **📂 ɪɴsᴛᴀʟʟ ʀᴇǫᴜɪʀᴇᴍᴇɴᴛs**
+   ```bash
+   pip3 install -U -r requirements.txt
+   ```
+ 8. **📝 ᴄʀᴇᴀᴛᴇ .env ᴡɪᴛʜ sᴀᴍᴘʟᴇ.env**
+   ```bash
+   cp sample.env .env
+   ```
+   - Edit .env with your vars
+ 9. **✏️ ᴇᴅɪᴛɪɴɢ ᴠᴀʀs**
+   ```bash
+   vi .env
+   ```
+   - Edit .env with your values.
+   - Press `I` button on keyboard to start editing.
+   - Press `Ctrl + C`  once you are done with editing vars and type `:wq` to save .env or `:qa` to exit editing.
+10. **🔗 ɪɴsᴛᴀʟʟɪɴɢ ᴛᴍᴜx**
+    ```bash
+    sudo apt install tmux -y && tmux
+    ```
+11. **🚀 ʀᴜɴ ᴛʜᴇ ʙᴏᴛ**
+    ```bash
+    bash start
+    ```
 
-[![Contributors](https://contrib.rocks/image?repo=TEAMPURVI/SONALI_MUSIC)](https://github.com/TEAMPURVI/SONALI_MUSIC/graphs/contributors)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
+</p>
 
-### Contact :
-<a href="https://t.me/ll_ALPHA_BABY_lll"><img title="Telegram" src="https://img.shields.io/badge/Telegram-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a> <a href="https://instagram.com/careless__02"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
+<h1 align="center">─「 ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ 」─</h1>  
+
+<p align="center">  
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>  
+</p>  
+
+<p align="center">  
+  <!-- Dev -->  
+  <a href="https://t.me/TheSigmaCoder">  
+    <img src="https://img.shields.io/badge/ᴅᴇᴠ-ᴀʟᴘʜᴀ-ff9800?style=for-the-badge&logo=telegram&logoColor=white"/> 
+  </a>  
+
+  <!-- Purvi Bots -->    
+  <a href="https://t.me/purvi_bots">  
+    <img src="https://img.shields.io/badge/ᴘᴜʀᴠ𝙸-%20ʙᴏᴛs-2196f3?style=for-the-badge&logo=telegram&logoColor=white"/> 
+  </a>  
+
+  <!-- Instagram -->    
+  <a href="https://instagram.com/careless__02">  
+    <img src="https://img.shields.io/badge/𝙸ɴѕᴛᴀɢʀᴀᴍ-d62976?style=for-the-badge&logo=instagram&logoColor=white"/>  
+  </a>  
+</p>  
+
+<p align="center">  
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>  
+</p>
