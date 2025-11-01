@@ -37,7 +37,7 @@
    ```
  6. **📥 ᴄʟᴏɴᴇ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ**
    ```bash
-   git clone https://github.com/Im-Notcoder/SonaliV2 && cd SonaliV2
+   git clone https://github.com/TEAMPURVI/SONALI_MUSIC && cd SONALI_MUSIC
    ```
  7. **📂 ɪɴsᴛᴀʟʟ ʀᴇǫᴜɪʀᴇᴍᴇɴᴛs**
    ```bash
