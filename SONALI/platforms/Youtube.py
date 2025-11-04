@@ -5,28 +5,18 @@
  
 # 📩 DM for permission : @TheSigmaCoder
 # =======================================================
-import asyncio
-import os
-import re
-import json
+
+
+import asyncio, os, re, json, yt_dlp, glob, random, logging, aiohttp, config, requests
 from typing import Union
-import requests
-import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 from SONALI.utils.database import is_on_off
 from SONALI.utils.formatters import time_to_seconds
-import os
-import glob
-import random
-import logging
-import aiohttp
-import config
 from urllib.parse import urlparse
 
 PURVIAPI = "http://46.250.243.52:1470"
-
 
 def cookie_txt_file():
     cookie_dir = f"{os.getcwd()}/cookies"
@@ -37,7 +27,6 @@ def cookie_txt_file():
         return None
     cookie_file = os.path.join(cookie_dir, random.choice(cookies_files))
     return cookie_file
-
 
 async def download_song(link: str):
     from SONALI import app
@@ -72,7 +61,6 @@ async def download_song(link: str):
 
     return xyz
 
-
 async def download_video(link: str):
     from SONALI import app
     x = re.compile(
@@ -105,9 +93,6 @@ async def download_video(link: str):
         await asyncio.sleep(0.5)
 
     return xyz
-
-
-
 
 async def check_file_size(link):
     async def get_format_info(link):
@@ -162,7 +147,6 @@ async def shell_cmd(cmd):
         else:
             return errorz.decode("utf-8")
     return out.decode("utf-8")
-
 
 class YouTubeAPI:
     def __init__(self):
@@ -256,16 +240,14 @@ class YouTubeAPI:
             link = self.base + link
         if "&" in link:
             link = link.split("&")[0]
-        
-        
+                
         try:
             downloaded_file = await download_video(link)
             if downloaded_file:
                 return 1, downloaded_file
         except Exception as e:
             print(f"Video API failed: {e}")
-        
-        
+                
         cookie_file = cookie_txt_file()
         if not cookie_file:
             return 0, "No cookies found. Cannot download video."
