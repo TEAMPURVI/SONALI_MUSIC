@@ -9,15 +9,7 @@ mongo = MongoCli(MONGO_DB_URI)
 db = mongo.SONALI
 
 coupledb = db.couple
-
-
 afkdb = db.afk
-
-nightmodedb = db.nightmode
-
-notesdb = db.notes
-
-filtersdb = db.filters
 
 
 async def _get_lovers(cid: int):
