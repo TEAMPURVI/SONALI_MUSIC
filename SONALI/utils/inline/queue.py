@@ -73,7 +73,7 @@ def aq_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", user_id=config.OWNER_ID"
+                text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", user_id=config.OWNER_ID
             ),
             InlineKeyboardButton(
                 text="ᴄʟᴏsᴇ", callback_data="close"
