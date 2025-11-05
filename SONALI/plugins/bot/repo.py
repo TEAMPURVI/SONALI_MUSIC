@@ -1,10 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from SONALI import app
-from config import BOT_USERNAME
-from SONALI.utils.errors import capture_err
-import httpx 
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """
 ✰ 𝗪ᴇʟᴄᴏᴍᴇ ᴛᴏ 𝗧ᴇᴀᴍ 𝗣ᴜʀᴠɪ 𝗥ᴇᴘᴏs ✰
@@ -19,14 +15,11 @@ start_txt = """
  
 """
 
-
-
-
 @app.on_message(filters.command("repo"))
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝗔ᴅᴅ ᴍᴇ 𝗠ᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+          InlineKeyboardButton("𝗔ᴅᴅ ᴍᴇ 𝗠ᴀʙʏ", url=f"https://t.me/{app.username}?startgroup=true")
         ],
         [
           InlineKeyboardButton("𝗛ᴇʟᴘ", url="https://t.me/PURVI_UPDATES"),
