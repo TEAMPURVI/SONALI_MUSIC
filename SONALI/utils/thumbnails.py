@@ -93,7 +93,7 @@ async def get_thumb(videoid):
 
     
         text_size = draw.textsize("@PurviBots   ", font=font)
-        draw.text((1280 - text_size[0] - 10, 10), "PurviBots   ", fill="yellow", font=font)
+        draw.text((1280 - text_size[0] - 10, 10), "@PurviBots   ", fill="yellow", font=font)
 
     
         draw.text(
