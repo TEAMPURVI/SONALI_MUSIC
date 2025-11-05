@@ -1,5 +1,5 @@
 from typing import Union
-
+import config
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -73,11 +73,11 @@ def aq_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="𝗔ʙᴏᴜᴛ 𝗔ʟᴘʜᴀ 🥀", url=f"https://t.me/WORLD_ALPHA"
+                text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", user_id=config.OWNER_ID"
             ),
             InlineKeyboardButton(
-                text="𝗦ᴜᴘᴘᴏʀᴛ 𝖦ʀᴏᴜᴘ 🥀", url=f"https://t.me/PURVI_UPDATES"
+                text="ᴄʟᴏsᴇ", callback_data="close"
             ),
         ],
-      ]
+    ]
     return buttons
