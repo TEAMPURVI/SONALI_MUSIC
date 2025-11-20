@@ -36,6 +36,7 @@ urllib3
 wget
 bing-image-urls
 bing_image_downloader
+py-yt-search
 git+https://github.com/KurimuzonAkuma/pyrogram@dev
 git+https://github.com/yt-dlp/yt-dlp.git
 git+https://github.com/alexmercerind/youtube-search-python@main
