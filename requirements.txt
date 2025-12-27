@@ -8,7 +8,7 @@ future==0.18.3
 search_engine_parser
 telethon==1.33.1
 gitpython
-httpx[http2]
+httpx[http2]==0.28.1
 heroku3
 hachoir
 motor==3.3.2
@@ -34,8 +34,6 @@ speedtest-cli
 unidecode
 urllib3
 wget
-bing-image-urls
-bing_image_downloader
 py-yt-search
 git+https://github.com/KurimuzonAkuma/pyrogram@dev
 git+https://github.com/yt-dlp/yt-dlp.git
