@@ -6,20 +6,20 @@ from pyrogram import filters
 load_dotenv()
 # ===============================================
 
-API_ID = int(getenv("API_ID", None))
-API_HASH = getenv("API_HASH", None)
-BOT_TOKEN = getenv("BOT_TOKEN", None)
+API_ID = int(getenv("30189654", None))
+API_HASH = getenv("6a1fc0c1b58bca6e125a9954ba068a08", None)
+BOT_TOKEN = getenv("8851885061:AAEIxZQirB91NGF_nUiLoO_v2mXJP8GyiMo", None)
 
 # ===============================================
 
-OWNER_ID = int(getenv("OWNER_ID", 7473021518))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "TheSigmaCoder")
+OWNER_ID = int(getenv("OWNER_ID", 7659937522))
+OWNER_USERNAME = getenv("OWNER_USERNAME", "The masoom")
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # ===============================================
 
-BOT_USERNAME = getenv("BOT_USERNAME", "Sonali_Music_bot")
-BOT_NAME = getenv("BOT_NAME", "Sonali Music")
+BOT_USERNAME = getenv("BOT_USERNAME", "Spotify music")
+BOT_NAME = getenv("BOT_NAME", "Spotify Music")
 
 # ===============================================
 
@@ -39,8 +39,8 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # ===============================================
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/PURVI_BOTS")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/PURVI_UPDATES")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dp_point")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/help_group18")
 
 # ===============================================
 
